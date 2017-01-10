@@ -13,7 +13,11 @@ class Comments extends Component {
         <p>
           <strong>{comment.user}</strong>
           {comment.text}
-          <button className="remove-comment" onClick={this.props.removeComment.bind(null, postId, i)}>&times;</button>
+          <button
+            className="remove-comment"
+            onClick={this.props.removeComment.bind(null, postId, i)}>
+            &times;
+          </button>
         </p>
       </div>
     );
